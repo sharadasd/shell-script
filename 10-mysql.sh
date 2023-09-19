@@ -5,4 +5,4 @@ then
 else
  echo "mysql installation successfull"
 fi
-yum install mysqlll -y
+yum install mysql -y
