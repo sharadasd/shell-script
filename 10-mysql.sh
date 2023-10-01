@@ -1,5 +1,5 @@
 #!/bin/bash
-yum install mysqll -y
+yum install mysql -y
 R="\e[31m"
 G="\e[32m"
 if [ $? -ne 0 ]
