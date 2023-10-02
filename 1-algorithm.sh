@@ -7,9 +7,9 @@ userid=$(id -u)
 R="\e[31m"
 G="\e[32m"
 
-if [$userid -ne 0];
+if [ $userid -ne 0 ];
 then
-  echo -e"$R error:run with root user$N"
+  echo -e"$R error:run with root user $N"
   exit 1
 fi
 validate(){
