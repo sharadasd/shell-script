@@ -1,7 +1,7 @@
 #!/bin/bash
 DATE=$(date +%f)
 logdir=/home/centos/shell-script-logs
-script-name=$0
+script_name=$0
 logfile=$logdir/$0-$date.log
 userid=$(id -u)
 R="\e[31m"
