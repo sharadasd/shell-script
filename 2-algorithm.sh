@@ -8,6 +8,6 @@ files_to_delete=$( find $app_dir -name "*.log" -type f -mtime +14)
 echo "script started executing at $DATE" &>>log_files
 while read line
  do 
-   echo "deleting $line" &>>log_files
+   echo "deleting $line" &>> log_files
    rm -rf $line
  done <<<$files_to_delete
