@@ -13,7 +13,7 @@ then
   exit 1
 fi
 validate(){
-    if [$1 -ne 0];
+    if [ $1 -ne 0 ];
     then 
       echo -e"$2 installation ......$R failure $N"
     else 
