@@ -4,12 +4,12 @@ logdir=/home/centos/shell-script-logs
 script_name=$0
 logfile=$logdir/$0-$date.log
 userid=$(id -u)
-R= "\e[31m"
-G= "\e[32m"
+R="\e[31m"
+G="\e[32m"
 
 if [ $userid -ne 0 ];
 then
-  echo -e" $R error:run with root user $N"
+  echo -e " $R error:run with root user $N"
   exit 1
 fi
 validate(){
