@@ -22,13 +22,14 @@ validate(){
 }
 for i in $@
  do 
+  yum list installed $i &>>$logfile
   if [$? -ne 0];
    then 
     echo "not installed"
-    yum install $i -y &>>logfile
+    yum install $i -y &>>$logfile
     validate $? "$i"
    else
     echo "installed"
   fi
-  done
+ done
 
