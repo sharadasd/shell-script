@@ -29,7 +29,7 @@ for i in $@
     yum install $i -y &>>$logfile
     validate $? "$i"
    else
-    echo "$Ginstalled"
+    echo "$G installed"
   fi
  done
 
