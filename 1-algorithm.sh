@@ -13,7 +13,7 @@ then
   exit 1
 fi
 validate(){
-    if [$1 -ne 0]
+    if [$1 -ne 0];
     then 
       echo -e"$2 installation ......$R failure $N"
     else 
@@ -22,7 +22,7 @@ validate(){
 }
 for i in $@
  do 
-  if [$? -ne 0]
+  if [$? -ne 0];
    then 
     echo "not installed"
     yum install $i -y &>>logfile
