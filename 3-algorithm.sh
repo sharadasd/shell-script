@@ -7,7 +7,7 @@ logfile=$log_file_dir/$0-$DATE.log
 R="\e[31m"
 G="\e[32m"
 
-disk_usage=$(df -hT)|grep -vE 'tmpfs|Filesystem'
+disk_usage=$(df -hT)| grep -vE 'tmpfs|Filesystem'
 disk_threshold=1
 message=""
 
@@ -21,3 +21,4 @@ message=""
     fi
  done <<< $disk_usage
  echo -e "message: $message"
+
