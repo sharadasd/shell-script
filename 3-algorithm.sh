@@ -21,4 +21,4 @@ message=""
       fi
   done <<< $disk_usage
  echo -e "message: $message"
-
+sh mail.sh sharu041@gmail.com "High Disk Usage" "$message" "DEVOPS TEAM" "High Disk usage"
