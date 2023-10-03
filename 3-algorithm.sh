@@ -9,7 +9,7 @@ G="\e[32m"
 
 disk_usage=$(df -hT)|grep -vE 'tmpfs|Filesystem'
 disk_threshold=1
-message= ""
+message=""
  while IFS=read line
  do
   usage=$(echo$line|awk '{print $6}'|cut -d % -f1)
